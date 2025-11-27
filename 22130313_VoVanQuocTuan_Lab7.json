@@ -1,0 +1,1272 @@
+{
+  "config": {
+    "configFile": "D:\\playwright_sofware_tester\\playwright.config.js",
+    "rootDir": "D:/playwright_sofware_tester/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/playwright_sofware_tester/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "D:/playwright_sofware_tester/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "22130313_VoVanQuocTuan_Lab7.spec.js",
+      "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Assignment 7 - Profile_MGT",
+          "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+          "line": 34,
+          "column": 6,
+          "specs": [
+            {
+              "title": "[Profile_MGT_Update_01] Kiểm tra layout đầy đủ các trường",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 20276,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập và vào trang Profile ===\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Popup đã đóng\n"
+                        },
+                        {
+                          "text": "Đã vào trang Profile\n"
+                        },
+                        {
+                          "text": "\n>>> RUN: Profile_MGT_Update_01 - Kiểm tra layout\n"
+                        },
+                        {
+                          "text": "Tất cả các trường đều hiển thị\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:04:28.728Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-f46470d069b33125c98b",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 78,
+              "column": 9
+            },
+            {
+              "title": "[Profile_MGT_Update_02] Kiểm tra giá trị mặc định đã có sẵn",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17601,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập và vào trang Profile ===\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "Đã vào trang Profile\n"
+                        },
+                        {
+                          "text": "\n>>> RUN: Profile_MGT_Update_02 - Giá trị mặc định\n"
+                        },
+                        {
+                          "text": "Họ và tên đã có giá trị mặc định\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:04:49.583Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-a4fd23f511fb562f1da5",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 91,
+              "column": 9
+            },
+            {
+              "title": "[Profile_MGT_Update_03] Giới hạn ký tự họ tên (quá dài)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 21216,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"thành công\"\u001b[39m\nReceived string:        \u001b[31m\"cập nhật thông tin \u001b[7mthành công\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"thành công\"\u001b[39m\nReceived string:        \u001b[31m\"cập nhật thông tin \u001b[7mthành công\u001b[27m\"\u001b[39m\n    at D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js:114:39",
+                        "location": {
+                          "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                          "column": 39,
+                          "line": 114
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 112 |\u001b[39m         \u001b[90m//6. Lấy thông báo (toast message) hiển thị sau khi nhấn cập nhật.\u001b[39m\n \u001b[90m 113 |\u001b[39m         \u001b[36mconst\u001b[39m msg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m getToastMessage(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 114 |\u001b[39m         expect(msg\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoContain(\u001b[32m'thành công'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 115 |\u001b[39m         expect(msg)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/lỗi|quá|giới hạn|ký tự|không được vượt/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 116 |\u001b[39m\n \u001b[90m 117 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'Hệ thống chặn họ quá dài'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                            "column": 39,
+                            "line": 114
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"thành công\"\u001b[39m\nReceived string:        \u001b[31m\"cập nhật thông tin \u001b[7mthành công\u001b[27m\"\u001b[39m\n\n  112 |         //6. Lấy thông báo (toast message) hiển thị sau khi nhấn cập nhật.\n  113 |         const msg = await getToastMessage(page);\n> 114 |         expect(msg.toLowerCase()).not.toContain('thành công');\n      |                                       ^\n  115 |         expect(msg).toMatch(/lỗi|quá|giới hạn|ký tự|không được vượt/i);\n  116 |\n  117 |         console.log('Hệ thống chặn họ quá dài');\n    at D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js:114:39"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập và vào trang Profile ===\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Đã vào trang Profile\n"
+                        },
+                        {
+                          "text": "\n>>> RUN: Profile_MGT_Update_03 - Họ quá dài (100 ký tự)\n"
+                        },
+                        {
+                          "text": "Message response: CẬP NHẬT THÔNG TIN THÀNH CÔNG\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:05:07.233Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\playwright_sofware_tester\\test-results\\22130313_VoVanQuocTuan_Lab-6eb55-i-hạn-ký-tự-họ-tên-quá-dài--chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                        "column": 39,
+                        "line": 114
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-5a83e688980a637da402",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 101,
+              "column": 9
+            },
+            {
+              "title": "[Profile_MGT_Update_04] Cập nhật thông tin hợp lệ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 21861,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập và vào trang Profile ===\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "Đã vào trang Profile\n"
+                        },
+                        {
+                          "text": "\n>>> RUN: Profile_MGT_Update_04 - Cập nhật thành công\n"
+                        },
+                        {
+                          "text": "Message response: CẬP NHẬT THÔNG TIN THÀNH CÔNG\n"
+                        },
+                        {
+                          "text": "Cập nhật profile thành công\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:05:30.912Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-e827581890d72088a80c",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 120,
+              "column": 9
+            },
+            {
+              "title": "[Profile_MGT_Update_05] Ngày sinh trong tương lai (không hợp lệ)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 22109,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/lỗi|ngày sinh|không hợp lệ/i\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/lỗi|ngày sinh|không hợp lệ/i\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\n    at D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js:154:21",
+                        "location": {
+                          "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                          "column": 21,
+                          "line": 154
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 152 |\u001b[39m         \u001b[36mconst\u001b[39m msg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m getToastMessage(page)\u001b[33m;\u001b[39m\n \u001b[90m 153 |\u001b[39m         expect(msg\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoContain(\u001b[32m'thành công'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 154 |\u001b[39m         expect(msg)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/lỗi|ngày sinh|không hợp lệ/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 155 |\u001b[39m\n \u001b[90m 156 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'Hệ thống chặn ngày sinh tương lai'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 157 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                            "column": 21,
+                            "line": 154
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/lỗi|ngày sinh|không hợp lệ/i\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\n\n  152 |         const msg = await getToastMessage(page);\n  153 |         expect(msg.toLowerCase()).not.toContain('thành công');\n> 154 |         expect(msg).toMatch(/lỗi|ngày sinh|không hợp lệ/i);\n      |                     ^\n  155 |\n  156 |         console.log('Hệ thống chặn ngày sinh tương lai');\n  157 |     });\n    at D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js:154:21"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập và vào trang Profile ===\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Popup đã đóng\n"
+                        },
+                        {
+                          "text": "Đã vào trang Profile\n"
+                        },
+                        {
+                          "text": "\n>>> RUN: Profile_MGT_Update_05 - Ngày sinh tương lai\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:05:53.213Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\playwright_sofware_tester\\test-results\\22130313_VoVanQuocTuan_Lab-510fb-ong-tương-lai-không-hợp-lệ--chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                        "column": 21,
+                        "line": 154
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-301767274cfd1e4f65e5",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 139,
+              "column": 9
+            },
+            {
+              "title": "[Profile_MGT_Update_06] Bỏ trống trường Họ (bắt buộc)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18733,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập và vào trang Profile ===\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Đã vào trang Profile\n"
+                        },
+                        {
+                          "text": "\n>>> RUN: Profile_MGT_Update_06 - Bỏ trống Họ\n"
+                        },
+                        {
+                          "text": "Lỗi inline \"Họ không được bỏ trống\" hiển thị đúng\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:06:20.805Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-2eec1d8d68207836f439",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 159,
+              "column": 9
+            },
+            {
+              "title": "[Profile_MGT_Update_07] Nhập ký tự đặc biệt vào Họ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 54774,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"thành công\"\u001b[39m\nReceived string:        \u001b[31m\"cập nhật thông tin \u001b[7mthành công\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"thành công\"\u001b[39m\nReceived string:        \u001b[31m\"cập nhật thông tin \u001b[7mthành công\u001b[27m\"\u001b[39m\n    at D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js:189:39",
+                        "location": {
+                          "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                          "column": 39,
+                          "line": 189
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 187 |\u001b[39m         \u001b[90m//5. Kiểm tra thông báo lỗi (toast message hoặc inline).\u001b[39m\n \u001b[90m 188 |\u001b[39m         \u001b[36mconst\u001b[39m msg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m getToastMessage(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 189 |\u001b[39m         expect(msg\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoContain(\u001b[32m'thành công'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 190 |\u001b[39m         expect(msg)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/lỗi|ký tự|không hợp lệ/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 191 |\u001b[39m\n \u001b[90m 192 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'Hệ thống chặn ký tự đặc biệt trong Họ'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                            "column": 39,
+                            "line": 189
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"thành công\"\u001b[39m\nReceived string:        \u001b[31m\"cập nhật thông tin \u001b[7mthành công\u001b[27m\"\u001b[39m\n\n  187 |         //5. Kiểm tra thông báo lỗi (toast message hoặc inline).\n  188 |         const msg = await getToastMessage(page);\n> 189 |         expect(msg.toLowerCase()).not.toContain('thành công');\n      |                                       ^\n  190 |         expect(msg).toMatch(/lỗi|ký tự|không hợp lệ/i);\n  191 |\n  192 |         console.log('Hệ thống chặn ký tự đặc biệt trong Họ');\n    at D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js:189:39"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập và vào trang Profile ===\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "Đã vào trang Profile\n"
+                        },
+                        {
+                          "text": "\n>>> RUN: Profile_MGT_Update_07 - Ký tự đặc biệt trong Họ\n"
+                        },
+                        {
+                          "text": "Message response: CẬP NHẬT THÔNG TIN THÀNH CÔNG\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:06:40.035Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\playwright_sofware_tester\\test-results\\22130313_VoVanQuocTuan_Lab-a5ce7--Nhập-ký-tự-đặc-biệt-vào-Họ-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                        "column": 39,
+                        "line": 189
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-e924fa9d6dbb306944bc",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 179,
+              "column": 9
+            },
+            {
+              "title": "[Profile_MGT_Update_08] Nhập khoảng trắng (space) vào trường Họ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 22200,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"thành công\"\u001b[39m\nReceived string:        \u001b[31m\"cập nhật thông tin \u001b[7mthành công\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"thành công\"\u001b[39m\nReceived string:        \u001b[31m\"cập nhật thông tin \u001b[7mthành công\u001b[27m\"\u001b[39m\n    at D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js:205:39",
+                        "location": {
+                          "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                          "column": 39,
+                          "line": 205
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 203 |\u001b[39m         \u001b[90m//5. Kiểm tra thông báo lỗi (toast message hoặc inline).\u001b[39m\n \u001b[90m 204 |\u001b[39m         \u001b[36mconst\u001b[39m msg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m getToastMessage(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 205 |\u001b[39m         expect(msg\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoContain(\u001b[32m'thành công'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 206 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\n \u001b[90m 207 |\u001b[39m             page\u001b[33m.\u001b[39mlocator(\u001b[32m'span.text-error'\u001b[39m)\u001b[33m.\u001b[39mfilter({\n \u001b[90m 208 |\u001b[39m                 hasText\u001b[33m:\u001b[39m \u001b[35m/Họ.*(không được bỏ trống|bắt buộc)/i\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                            "column": 39,
+                            "line": 205
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"thành công\"\u001b[39m\nReceived string:        \u001b[31m\"cập nhật thông tin \u001b[7mthành công\u001b[27m\"\u001b[39m\n\n  203 |         //5. Kiểm tra thông báo lỗi (toast message hoặc inline).\n  204 |         const msg = await getToastMessage(page);\n> 205 |         expect(msg.toLowerCase()).not.toContain('thành công');\n      |                                       ^\n  206 |         await expect(\n  207 |             page.locator('span.text-error').filter({\n  208 |                 hasText: /Họ.*(không được bỏ trống|bắt buộc)/i\n    at D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js:205:39"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập và vào trang Profile ===\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "Đã vào trang Profile\n"
+                        },
+                        {
+                          "text": "\n>>> [Profile_MGT_Update_08] Nhập khoảng trắng (space) vào trường Họ\n"
+                        },
+                        {
+                          "text": "Message response: CẬP NHẬT THÔNG TIN THÀNH CÔNG\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:07:37.004Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\playwright_sofware_tester\\test-results\\22130313_VoVanQuocTuan_Lab-0064e-g-trắng-space-vào-trường-Họ-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                        "column": 39,
+                        "line": 205
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-28316fe436b772071cea",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 195,
+              "column": 9
+            },
+            {
+              "title": "[Profile_MGT_Update_09] Định dạng ngày sinh sai (nhập text)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 22614,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"thành công\"\u001b[39m\nReceived string:        \u001b[31m\"cập nhật thông tin \u001b[7mthành công\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"thành công\"\u001b[39m\nReceived string:        \u001b[31m\"cập nhật thông tin \u001b[7mthành công\u001b[27m\"\u001b[39m\n    at D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js:230:39",
+                        "location": {
+                          "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                          "column": 39,
+                          "line": 230
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 228 |\u001b[39m         \u001b[90m//6. Kiểm tra thông báo lỗi \u001b[39m\n \u001b[90m 229 |\u001b[39m         \u001b[36mconst\u001b[39m msg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m getToastMessage(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 230 |\u001b[39m         expect(msg\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoContain(\u001b[32m'thành công'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 231 |\u001b[39m         expect(msg)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/lỗi|ngày sinh|không hợp lệ/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 232 |\u001b[39m\n \u001b[90m 233 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'Hệ thống chặn ký tự đặc biệt trong Họ'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                            "column": 39,
+                            "line": 230
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"thành công\"\u001b[39m\nReceived string:        \u001b[31m\"cập nhật thông tin \u001b[7mthành công\u001b[27m\"\u001b[39m\n\n  228 |         //6. Kiểm tra thông báo lỗi \n  229 |         const msg = await getToastMessage(page);\n> 230 |         expect(msg.toLowerCase()).not.toContain('thành công');\n      |                                       ^\n  231 |         expect(msg).toMatch(/lỗi|ngày sinh|không hợp lệ/i);\n  232 |\n  233 |         console.log('Hệ thống chặn ký tự đặc biệt trong Họ');\n    at D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js:230:39"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập và vào trang Profile ===\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Đã vào trang Profile\n"
+                        },
+                        {
+                          "text": "\n>>> [Profile_MGT_Update_09] Định dạng ngày sinh sai (nhập text)\n"
+                        },
+                        {
+                          "text": "Message response: CẬP NHẬT THÔNG TIN THÀNH CÔNG\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:08:03.836Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\playwright_sofware_tester\\test-results\\22130313_VoVanQuocTuan_Lab-dd629-ng-ngày-sinh-sai-nhập-text--chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\playwright_sofware_tester\\tests\\22130313_VoVanQuocTuan_Lab7.spec.js",
+                        "column": 39,
+                        "line": 230
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-e8c8bda4ff4bfe6cba47",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 215,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "ASSIGNMENT 7 - Cart_MGT",
+          "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+          "line": 242,
+          "column": 6,
+          "specs": [
+            {
+              "title": "[Cart_MGT_ADD_01] Thêm sản phẩm vào giỏ hàng bằng Quick Add từ danh sách sản phẩm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 49616,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập + Dọn sạch giỏ + Vào danh mục sản phẩm ===\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Đã đăng nhập\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Giỏ hàng đã sạch\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Popup đã đóng\n"
+                        },
+                        {
+                          "text": "Đã vào trang danh mục\n\n"
+                        },
+                        {
+                          "text": "\n>>> RUN: Cart_MGT_ADD_01 - Quick Add từ danh sách\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Message: Đã thêm vào giỏ hàng!\n"
+                        },
+                        {
+                          "text": "✓ PASS: 0 → 1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:08:29.241Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-5cbd7320e15c0344c7ae",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 314,
+              "column": 9
+            },
+            {
+              "title": "[Cart_MGT_ADD_02] Thêm sản phẩm vào giỏ hàng bằng Quick Add  với lựa chọn màu, size và số lượng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 67274,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập + Dọn sạch giỏ + Vào danh mục sản phẩm ===\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "Đã đăng nhập\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Giỏ hàng đã sạch\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "Đã vào trang danh mục\n\n"
+                        },
+                        {
+                          "text": "\n>>> RUN: Cart_MGT_ADD_02 - Thêm 2 sản phẩm\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ PASS: 0 → 2 (+2)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:09:19.300Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-09fbeaa939dac5805276",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 341,
+              "column": 9
+            },
+            {
+              "title": "[Cart_MGT_ADD_03] Thêm sản phẩm khi số lượng tồn kho ≥ số lượng yêu cầu.",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 31289,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập + Dọn sạch giỏ + Vào danh mục sản phẩm ===\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Đã đăng nhập\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Giỏ hàng đã sạch\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Popup đã đóng\n"
+                        },
+                        {
+                          "text": "Đã vào trang danh mục\n\n"
+                        },
+                        {
+                          "text": "\n>>> RUN: Cart_MGT_ADD_03 - Thêm 3 sản phẩm\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ PASS: 0 → 3 (+3)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:10:26.637Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-9b8285e9dc35ca86a64f",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 379,
+              "column": 9
+            },
+            {
+              "title": "[Cart_MGT_ADD_04] Thêm sản phẩm vượt quá số lượng tồn kho",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 38217,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập + Dọn sạch giỏ + Vào danh mục sản phẩm ===\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "Đã đăng nhập\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Giỏ hàng đã sạch\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "Đã vào trang danh mục\n\n"
+                        },
+                        {
+                          "text": "\n>>> RUN: Cart_MGT_ADD_04 - Vượt tồn kho\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Error: SỐ LƯỢNG BẠN MUA VƯỢT QUÁ TỒN KHO\n"
+                        },
+                        {
+                          "text": "✓ PASS: Hệ thống chặn → Giỏ vẫn 0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:10:57.981Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-aec910d6b3915c4491f6",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 416,
+              "column": 9
+            },
+            {
+              "title": "[Cart_MGT_ADD_05] Kiểm tra hiển thị giỏ hàng sau khi thêm sản phẩm.",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 38163,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập + Dọn sạch giỏ + Vào danh mục sản phẩm ===\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Đã đăng nhập\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Giỏ hàng đã sạch\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "Đã vào trang danh mục\n\n"
+                        },
+                        {
+                          "text": "\n>>> RUN: Cart_MGT_ADD_05 - Verify thông tin trong giỏ\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ PASS: Thông tin sản phẩm trong giỏ đúng hoàn toàn\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:11:36.263Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-f8fbdd4d15acb4af5e00",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 457,
+              "column": 9
+            },
+            {
+              "title": "[Cart_MGT_ADD_06] Kiểm tra thêm sản phẩm từ trang chi tiết",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 35641,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập + Dọn sạch giỏ + Vào danh mục sản phẩm ===\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Popup đã đóng\n"
+                        },
+                        {
+                          "text": "Đã đăng nhập\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Giỏ hàng đã sạch\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "Đã vào trang danh mục\n\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Chọn màu\n"
+                        },
+                        {
+                          "text": "✓ Chọn size\n"
+                        },
+                        {
+                          "text": "✓ Nhập số lượng: 1\n"
+                        },
+                        {
+                          "text": "✓ Message: Đã thêm vào giỏ hàng!\n"
+                        },
+                        {
+                          "text": "✓ PASS: Thêm thành công sản phẩm từ trang chi tiết\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:12:14.492Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-2662b125bcd70a2b9e2f",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 522,
+              "column": 9
+            },
+            {
+              "title": "[Cart_MGT_ADD_07] Thêm sản phẩm khi chưa đăng nhập (guest)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 28201,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "=== beforeEach: Đăng nhập + Dọn sạch giỏ + Vào danh mục sản phẩm ===\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Đã đăng nhập\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "Giỏ hàng đã sạch\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Popup đã đóng\n"
+                        },
+                        {
+                          "text": "Đã vào trang danh mục\n\n"
+                        },
+                        {
+                          "text": "✓ Không cần đóng popup\n"
+                        },
+                        {
+                          "text": "✓ Không có popup\n"
+                        },
+                        {
+                          "text": "✓ Chọn màu\n"
+                        },
+                        {
+                          "text": "✓ Chọn size\n"
+                        },
+                        {
+                          "text": "✓ Nhập số lượng: 1\n"
+                        },
+                        {
+                          "text": "✓ Message: Đã thêm vào giỏ hàng!\n"
+                        },
+                        {
+                          "text": "✓ PASS: Thêm thành công sản phẩm từ trang chi tiết\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-26T12:12:50.206Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18a5411fdafc2652c1f8-48ad1f573b7ee8890bc4",
+              "file": "22130313_VoVanQuocTuan_Lab7.spec.js",
+              "line": 555,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-11-26T12:04:26.805Z",
+    "duration": 532373.375,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}
