@@ -1,0 +1,996 @@
+{
+  "config": {
+    "configFile": "/Users/tuan/Desktop/sofware_tester/playwright.config.js",
+    "rootDir": "/Users/tuan/Desktop/sofware_tester/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/tuan/Desktop/sofware_tester/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/tuan/Desktop/sofware_tester/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/auth\\.setup\\.spec\\.js/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/tuan/Desktop/sofware_tester/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/tuan/Desktop/sofware_tester/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/tuan/Desktop/sofware_tester/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "google-chrome-login",
+        "name": "google-chrome-login",
+        "testDir": "/Users/tuan/Desktop/sofware_tester/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+      "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Kiểm tra chức năng giỏ hàng - Tăng số lượng (CART_01)",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Tăng số lượng sản phẩm từ 1 lên 2 trong trang Cart",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7786,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-27T16:18:53.265Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-e967e23dd133d80fa69f",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 39,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Test Giảm số lượng sản phẩm Rabity (CART_02)",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 61,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Giảm số lượng từ 2 xuống 1 bằng nút trừ (-)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9031,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-27T16:19:01.403Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-a53db19ed3318ba759c6",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 80,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Test Nhập trực tiếp số lượng sản phẩm (CART_03)",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 103,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Nhập số lượng 3 vào ô input và kiểm tra cập nhật giá tiền",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 9650,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1197000\u001b[39m\nReceived: \u001b[31m399000\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1197000\u001b[39m\nReceived: \u001b[31m399000\u001b[39m\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:147:29",
+                        "location": {
+                          "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                          "column": 29,
+                          "line": 147
+                        },
+                        "snippet": "  145 |     const actualLinePrice = parseInt(actualLinePriceText.replace(/[^0-9]/g, ''));\n  146 |\n> 147 |     expect(actualLinePrice).toBe(expectedLinePrice);\n      |                             ^\n  148 |   });\n  149 | });\n  150 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                            "column": 29,
+                            "line": 147
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1197000\u001b[39m\nReceived: \u001b[31m399000\u001b[39m\n\n  145 |     const actualLinePrice = parseInt(actualLinePriceText.replace(/[^0-9]/g, ''));\n  146 |\n> 147 |     expect(actualLinePrice).toBe(expectedLinePrice);\n      |                             ^\n  148 |   });\n  149 | });\n  150 |\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:147:29"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-27T16:19:10.442Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tuan/Desktop/sofware_tester/test-results/22130312_AnhTuan_CART_MODI-59426--kiểm-tra-cập-nhật-giá-tiền-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                        "column": 29,
+                        "line": 147
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-a53d6aabcca8f3fd8d54",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 122,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "[CART_MGT_Modify_04] Kiểm tra thao tác giảm khi số lượng là 1",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 152,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Nhấn nút (-) khi số lượng đang là 1 -> Số lượng vẫn giữ là 1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7833,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-27T16:19:20.461Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-a790a571f833165a31f8",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 171,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "[CART_MGT_Modify_05] Kiểm tra nút (+) khi đạt giới hạn Max (999)",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 191,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Từ 998 -> (+) -> 999 -> (+) -> Vẫn giữ 999",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 16987,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.item-cart').first().locator('input.input-quantity')\nExpected string: \u001b[32m\"999\"\u001b[39m\nReceived string: \u001b[31m\"1000\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.item-cart').first().locator('input.input-quantity')\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" value=\"1000\" data-line=\"1\" minlength=\"1\" maxlength=\"3\" name=\"updates[]\" id=\"updates_143024684\" class=\"input-quantity\"/>\u001b[22m\n\u001b[2m      - unexpected value \"1000\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.item-cart').first().locator('input.input-quantity')\nExpected string: \u001b[32m\"999\"\u001b[39m\nReceived string: \u001b[31m\"1000\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.item-cart').first().locator('input.input-quantity')\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" value=\"1000\" data-line=\"1\" minlength=\"1\" maxlength=\"3\" name=\"updates[]\" id=\"updates_143024684\" class=\"input-quantity\"/>\u001b[22m\n\u001b[2m      - unexpected value \"1000\"\u001b[22m\n\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:231:33",
+                        "location": {
+                          "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                          "column": 33,
+                          "line": 231
+                        },
+                        "snippet": "  229 |\n  230 |     // --- BƯỚC 4: KIỂM TRA KẾT QUẢ ---\n> 231 |     await expect(quantityInput).toHaveValue('999');\n      |                                 ^\n  232 |   });\n  233 | });\n  234 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                            "column": 33,
+                            "line": 231
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.item-cart').first().locator('input.input-quantity')\nExpected string: \u001b[32m\"999\"\u001b[39m\nReceived string: \u001b[31m\"1000\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.item-cart').first().locator('input.input-quantity')\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" value=\"1000\" data-line=\"1\" minlength=\"1\" maxlength=\"3\" name=\"updates[]\" id=\"updates_143024684\" class=\"input-quantity\"/>\u001b[22m\n\u001b[2m      - unexpected value \"1000\"\u001b[22m\n\n\n  229 |\n  230 |     // --- BƯỚC 4: KIỂM TRA KẾT QUẢ ---\n> 231 |     await expect(quantityInput).toHaveValue('999');\n      |                                 ^\n  232 |   });\n  233 | });\n  234 |\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:231:33"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-27T16:19:28.397Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tuan/Desktop/sofware_tester/test-results/22130312_AnhTuan_CART_MODI-c7835-998-----999-----Vẫn-giữ-999-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                        "column": 33,
+                        "line": 231
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-3681b000cde665a51e23",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 208,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "[CART_MGT_Modify_06] Kiểm tra nhập quá giới hạn (1000) bằng thao tác Click out",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 236,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Nhập 1000 -> Click ra ngoài -> Số lượng tự đổi về 999",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 13979,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.item-cart').first().locator('input.input-quantity')\nExpected string: \u001b[32m\"999\"\u001b[39m\nReceived string: \u001b[31m\"100\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.item-cart').first().locator('input.input-quantity')\u001b[22m\n\u001b[2m    9 × locator resolved to <input value=\"1\" type=\"text\" data-line=\"1\" minlength=\"1\" maxlength=\"3\" name=\"updates[]\" id=\"updates_143024748\" class=\"input-quantity\"/>\u001b[22m\n\u001b[2m      - unexpected value \"100\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.item-cart').first().locator('input.input-quantity')\nExpected string: \u001b[32m\"999\"\u001b[39m\nReceived string: \u001b[31m\"100\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.item-cart').first().locator('input.input-quantity')\u001b[22m\n\u001b[2m    9 × locator resolved to <input value=\"1\" type=\"text\" data-line=\"1\" minlength=\"1\" maxlength=\"3\" name=\"updates[]\" id=\"updates_143024748\" class=\"input-quantity\"/>\u001b[22m\n\u001b[2m      - unexpected value \"100\"\u001b[22m\n\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:267:33",
+                        "location": {
+                          "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                          "column": 33,
+                          "line": 267
+                        },
+                        "snippet": "  265 |\n  266 |     // 3. Kiểm tra: Mong đợi về 999\n> 267 |     await expect(quantityInput).toHaveValue('999');\n      |                                 ^\n  268 |   });\n  269 | });\n  270 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                            "column": 33,
+                            "line": 267
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.item-cart').first().locator('input.input-quantity')\nExpected string: \u001b[32m\"999\"\u001b[39m\nReceived string: \u001b[31m\"100\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.item-cart').first().locator('input.input-quantity')\u001b[22m\n\u001b[2m    9 × locator resolved to <input value=\"1\" type=\"text\" data-line=\"1\" minlength=\"1\" maxlength=\"3\" name=\"updates[]\" id=\"updates_143024748\" class=\"input-quantity\"/>\u001b[22m\n\u001b[2m      - unexpected value \"100\"\u001b[22m\n\n\n  265 |\n  266 |     // 3. Kiểm tra: Mong đợi về 999\n> 267 |     await expect(quantityInput).toHaveValue('999');\n      |                                 ^\n  268 |   });\n  269 | });\n  270 |\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:267:33"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-27T16:19:45.760Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tuan/Desktop/sofware_tester/test-results/22130312_AnhTuan_CART_MODI-ea639-ài---Số-lượng-tự-đổi-về-999-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                        "column": 33,
+                        "line": 267
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-843f56172f2fc7a856ee",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 253,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "[CART_MGT_Modify_07] Kiểm tra nhập giá trị không hợp lệ (0, số âm, chữ)",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 272,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Kiểm tra lần lượt 3 trường hợp: Nhập 0, Nhập số âm, Nhập chữ",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 120144,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                            "column": 31,
+                            "line": 281
+                          },
+                          "message": "Error: locator.click: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href*=\"/products/quan-dai-jean-be-gai-rabity-941-27\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <a title=\"Đầm Jean dài tay bé gái Rabity 951.019\" href=\"/products/quan-dai-jean-be-gai-rabity-941-27\" aria-label=\"Đầm Jean dài tay bé gái Rabity 951.019\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"om-holder-campaign-220\" class=\"om-holder om-sh-holder om-holder-fixed\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    217 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <div id=\"om-holder-campaign-220\" class=\"om-holder om-sh-holder om-holder-fixed\"></div> intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\n\n  279 |         const specificProduct = page.locator('a[href*=\"/products/quan-dai-jean-be-gai-rabity-941-27\"]').first();\n  280 |         await specificProduct.waitFor();\n> 281 |         await specificProduct.click();\n      |                               ^\n  282 |         await page.waitForLoadState('domcontentloaded');\n  283 |         const sizeOption = page.locator('.swatch-element:not(.soldout)').first();\n  284 |         if (await sizeOption.isVisible()) {\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:281:31\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:277:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "PRE-CONDITION: Thêm sản phẩm vào giỏ hàng",
+                          "duration": 120102,
+                          "error": {
+                            "message": "Error: locator.click: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href*=\"/products/quan-dai-jean-be-gai-rabity-941-27\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <a title=\"Đầm Jean dài tay bé gái Rabity 951.019\" href=\"/products/quan-dai-jean-be-gai-rabity-941-27\" aria-label=\"Đầm Jean dài tay bé gái Rabity 951.019\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"om-holder-campaign-220\" class=\"om-holder om-sh-holder om-holder-fixed\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    217 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <div id=\"om-holder-campaign-220\" class=\"om-holder om-sh-holder om-holder-fixed\"></div> intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n",
+                            "stack": "Error: locator.click: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href*=\"/products/quan-dai-jean-be-gai-rabity-941-27\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <a title=\"Đầm Jean dài tay bé gái Rabity 951.019\" href=\"/products/quan-dai-jean-be-gai-rabity-941-27\" aria-label=\"Đầm Jean dài tay bé gái Rabity 951.019\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"om-holder-campaign-220\" class=\"om-holder om-sh-holder om-holder-fixed\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    217 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <div id=\"om-holder-campaign-220\" class=\"om-holder om-sh-holder om-holder-fixed\"></div> intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:281:31\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:277:5",
+                            "location": {
+                              "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                              "column": 31,
+                              "line": 281
+                            },
+                            "snippet": "  279 |         const specificProduct = page.locator('a[href*=\"/products/quan-dai-jean-be-gai-rabity-941-27\"]').first();\n  280 |         await specificProduct.waitFor();\n> 281 |         await specificProduct.click();\n      |                               ^\n  282 |         await page.waitForLoadState('domcontentloaded');\n  283 |         const sizeOption = page.locator('.swatch-element:not(.soldout)').first();\n  284 |         if (await sizeOption.isVisible()) {"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-11-27T16:20:00.182Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tuan/Desktop/sofware_tester/test-results/22130312_AnhTuan_CART_MODI-929bb--Nhập-0-Nhập-số-âm-Nhập-chữ-chromium/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-fa56f222f937f7b550f6",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 274,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "[CART_MGT_Modify_08] Kiểm tra chức năng Xóa sản phẩm",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 328,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Nhấn nút Xóa -> Sản phẩm phải biến mất khỏi giỏ hàng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9475,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-27T16:22:00.793Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-a1c0663bffb7c20ccbef",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 347,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "[CART_MGT_Modify_09] Kiểm tra chức năng Hủy thao tác xóa",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 370,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Nhấn Xóa -> Chọn Hủy (Cancel) -> Sản phẩm vẫn còn",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 13259,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('.item-cart').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.item-cart').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('.item-cart').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.item-cart').first()\u001b[22m\n\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:408:28",
+                        "location": {
+                          "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                          "column": 28,
+                          "line": 408
+                        },
+                        "snippet": "  406 |     // 3. KIỂM TRA KẾT QUẢ\n  407 |     // Mong đợi: Sản phẩm vẫn còn nằm đó\n> 408 |     await expect(cartItem).toBeVisible();\n      |                            ^\n  409 |     \n  410 |     // Kiểm tra kỹ hơn: Số lượng vẫn là 1\n  411 |     await expect(cartItem.locator('input.input-quantity')).toHaveValue('1');"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                            "column": 28,
+                            "line": 408
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('.item-cart').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.item-cart').first()\u001b[22m\n\n\n  406 |     // 3. KIỂM TRA KẾT QUẢ\n  407 |     // Mong đợi: Sản phẩm vẫn còn nằm đó\n> 408 |     await expect(cartItem).toBeVisible();\n      |                            ^\n  409 |     \n  410 |     // Kiểm tra kỹ hơn: Số lượng vẫn là 1\n  411 |     await expect(cartItem.locator('input.input-quantity')).toHaveValue('1');\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:408:28"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-27T16:22:10.383Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tuan/Desktop/sofware_tester/test-results/22130312_AnhTuan_CART_MODI-f7e7f-y-Cancel---Sản-phẩm-vẫn-còn-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                        "column": 28,
+                        "line": 408
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-1a2ac4526a9fafa4b82e",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 389,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "SITE_NAV_Banner_01: Kiểm tra Banner Quảng Cáo",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 420,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Click vào Banner Slider tại trang chủ và kiểm tra chuyển hướng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1429,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-27T16:22:24.015Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-bac8bb526a0265cc4f3f",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 422,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "SITE_NAV_Body_01: Kiểm tra nút CTA (Thêm giỏ / Mua ngay) tại trang chi tiết",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 447,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Click nút \"Thêm vào giỏ\" -> Kiểm tra icon giỏ hàng cập nhật",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6435,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('.addtocart-detail, button[id=\"add-to-cart\"]').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.addtocart-detail, button[id=\"add-to-cart\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('.addtocart-detail, button[id=\"add-to-cart\"]').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.addtocart-detail, button[id=\"add-to-cart\"]').first()\u001b[22m\n\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:471:32",
+                        "location": {
+                          "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                          "column": 32,
+                          "line": 471
+                        },
+                        "snippet": "  469 |   test('Click nút \"Thêm vào giỏ\" -> Kiểm tra icon giỏ hàng cập nhật', async ({ page }) => {\n  470 |     const addToCartBtn = page.locator('.addtocart-detail, button[id=\"add-to-cart\"]').first();\n> 471 |     await expect(addToCartBtn).toBeVisible();\n      |                                ^\n  472 |     await addToCartBtn.click();\n  473 |\n  474 |     // Icon giỏ hàng trên Header nảy số"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                            "column": 32,
+                            "line": 471
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('.addtocart-detail, button[id=\"add-to-cart\"]').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.addtocart-detail, button[id=\"add-to-cart\"]').first()\u001b[22m\n\n\n  469 |   test('Click nút \"Thêm vào giỏ\" -> Kiểm tra icon giỏ hàng cập nhật', async ({ page }) => {\n  470 |     const addToCartBtn = page.locator('.addtocart-detail, button[id=\"add-to-cart\"]').first();\n> 471 |     await expect(addToCartBtn).toBeVisible();\n      |                                ^\n  472 |     await addToCartBtn.click();\n  473 |\n  474 |     // Icon giỏ hàng trên Header nảy số\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:471:32"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-27T16:22:25.542Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tuan/Desktop/sofware_tester/test-results/22130312_AnhTuan_CART_MODI-2a5d7--tra-icon-giỏ-hàng-cập-nhật-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                        "column": 32,
+                        "line": 471
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-a3f409e448a816c79dd8",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 469,
+              "column": 7
+            },
+            {
+              "title": "Click nút \"Mua ngay\" -> Chuyển hướng đến trang Thanh toán",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1900,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "SKIP: Sản phẩm này không có nút Mua ngay.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-27T16:22:32.357Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-81847cef44778485f438",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 483,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "SITE_NAV_External_01: Kiểm tra liên kết Mạng xã hội",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 500,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Click icon Social Media và kiểm tra URL đích",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4801,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Click Icon: Facebook",
+                          "duration": 1601
+                        },
+                        {
+                          "title": "Click Icon: YouTube",
+                          "duration": 1801
+                        }
+                      ],
+                      "startTime": "2025-11-27T16:22:34.360Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-5e3af40c766f3e880f09",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 502,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "SITE_NAV_Footer_01: Kiểm tra liên kết Footer & Sitemap",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 544,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Click các link trong Footer và kiểm tra trang đích",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 120203,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                            "column": 20,
+                            "line": 563
+                          },
+                          "message": "Error: locator.click: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#main-footer').locator('.linklist-footer a').filter({ hasText: 'Chính sách đổi trả hàng' }).first()\u001b[22m\n\u001b[2m    - locator resolved to <a href=\"/pages/rabity-chinh-sach-doi-hang\">Chính sách đổi trả hàng</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"om-holder-campaign-220\" class=\"om-holder om-sh-holder om-holder-fixed\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    217 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <div id=\"om-holder-campaign-220\" class=\"om-holder om-sh-holder om-holder-fixed\"></div> intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n\n  561 |         \n  562 |         await expect(link).toBeVisible();\n> 563 |         await link.click();\n      |                    ^\n  564 |         await page.waitForLoadState('domcontentloaded');\n  565 |\n  566 |         // Kiểm tra URL và Title\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:563:20\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:559:7"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Click Footer Link: Câu chuyện về Rabity",
+                          "duration": 1361
+                        },
+                        {
+                          "title": "Click Footer Link: Hệ thống cửa hàng",
+                          "duration": 609
+                        },
+                        {
+                          "title": "Click Footer Link: Chính sách đổi trả hàng",
+                          "duration": 116421,
+                          "error": {
+                            "message": "Error: locator.click: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#main-footer').locator('.linklist-footer a').filter({ hasText: 'Chính sách đổi trả hàng' }).first()\u001b[22m\n\u001b[2m    - locator resolved to <a href=\"/pages/rabity-chinh-sach-doi-hang\">Chính sách đổi trả hàng</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"om-holder-campaign-220\" class=\"om-holder om-sh-holder om-holder-fixed\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    217 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <div id=\"om-holder-campaign-220\" class=\"om-holder om-sh-holder om-holder-fixed\"></div> intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+                            "stack": "Error: locator.click: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#main-footer').locator('.linklist-footer a').filter({ hasText: 'Chính sách đổi trả hàng' }).first()\u001b[22m\n\u001b[2m    - locator resolved to <a href=\"/pages/rabity-chinh-sach-doi-hang\">Chính sách đổi trả hàng</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"om-holder-campaign-220\" class=\"om-holder om-sh-holder om-holder-fixed\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    217 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <div id=\"om-holder-campaign-220\" class=\"om-holder om-sh-holder om-holder-fixed\"></div> intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:563:20\n    at /Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts:559:7",
+                            "location": {
+                              "file": "/Users/tuan/Desktop/sofware_tester/tests/22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+                              "column": 20,
+                              "line": 563
+                            },
+                            "snippet": "  561 |         \n  562 |         await expect(link).toBeVisible();\n> 563 |         await link.click();\n      |                    ^\n  564 |         await page.waitForLoadState('domcontentloaded');\n  565 |\n  566 |         // Kiểm tra URL và Title"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-11-27T16:22:39.171Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/tuan/Desktop/sofware_tester/test-results/22130312_AnhTuan_CART_MODI-1535c-oter-và-kiểm-tra-trang-đích-chromium/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-c8bcb1145e768609ac5f",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 546,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "SITE_NAV_Header_01: Kiểm tra Menu Chính (Header Navigation)",
+          "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+          "line": 580,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Click lần lượt các menu chính trên thanh điều hướng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7182,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Click Menu: BÉ GÁI",
+                          "duration": 1941
+                        },
+                        {
+                          "title": "Click Menu: BÉ TRAI",
+                          "duration": 726
+                        },
+                        {
+                          "title": "Click Menu: 🌟 GIÀY DÉP",
+                          "duration": 884
+                        },
+                        {
+                          "title": "Click Menu: BỘ SƯU TẬP MỚI",
+                          "duration": 879
+                        },
+                        {
+                          "title": "Click Menu: THỎ CHIA SẺ",
+                          "duration": 627
+                        }
+                      ],
+                      "startTime": "2025-11-27T16:24:39.763Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35a172205cc98c8bf70c-541d32ccc18bdd6fa460",
+              "file": "22130312_AnhTuan_CART_MODIFY_SITE_NAV.spec.ts",
+              "line": 586,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-11-27T16:18:52.954Z",
+    "duration": 354141.81600000005,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}
