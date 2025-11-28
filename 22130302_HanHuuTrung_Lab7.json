@@ -1,0 +1,1269 @@
+{
+  "config": {
+    "configFile": "E:\\Nam4HocKy1\\hky\\kiem thu phan mem\\Test_Gk\\playwright.config.js",
+    "rootDir": "E:/Nam4HocKy1/hky/kiem thu phan mem/Test_Gk/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "test-results/test-report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "E:/Nam4HocKy1/hky/kiem thu phan mem/Test_Gk/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "E:/Nam4HocKy1/hky/kiem thu phan mem/Test_Gk/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "PROMOTION_Apply.spec.js",
+      "file": "PROMOTION_Apply.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Module_ApplyPromotion - Áp dụng mã giảm giá",
+          "file": "PROMOTION_Apply.spec.js",
+          "line": 217,
+          "column": 6,
+          "specs": [
+            {
+              "title": "PROMOTION_Apply_01",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 53227,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n╔════════════════════════════════════════╗\n"
+                        },
+                        {
+                          "text": "║  KHỞI TẠO TEST SUITE - ÁP MÃ GIẢM GIÁ  ║\n"
+                        },
+                        {
+                          "text": "╚════════════════════════════════════════╝\n\n"
+                        },
+                        {
+                          "text": "\n🔄 Chuẩn bị test...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã đăng nhập sẵn\n\n"
+                        },
+                        {
+                          "text": "🧹 Xóa giỏ hàng cũ...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Giỏ hàng đã trống\n\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "→ Đã click \"Thêm vào giỏ\"\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã thêm sản phẩm\n\n"
+                        },
+                        {
+                          "text": "📦 Mở giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã vào giỏ hàng\n\n"
+                        },
+                        {
+                          "text": "✅ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "PROMOTION_Apply_01\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════\n\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "💰 Giá trước: 329.000đ\n"
+                        },
+                        {
+                          "text": "🎟️  Nhập mã: RABIBFF799k\n"
+                        },
+                        {
+                          "text": "→ Click \"Áp dụng\"\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "💰 Giá sau: 329.000đ\n"
+                        },
+                        {
+                          "text": "❌ FAIL - Mã không được áp dụng\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:30:48.190Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d65e924143411e789070-896d3164e60ca01a0faa",
+              "file": "PROMOTION_Apply.spec.js",
+              "line": 271,
+              "column": 3
+            },
+            {
+              "title": "PROMOTION_Apply_02: Kiểm tra tính toán số tiền giảm giá chính xác",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 35411,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Chuẩn bị test...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã đăng nhập sẵn\n\n"
+                        },
+                        {
+                          "text": "🧹 Xóa giỏ hàng cũ...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Giỏ hàng đã trống\n\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "→ Đã click \"Thêm vào giỏ\"\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã thêm sản phẩm\n\n"
+                        },
+                        {
+                          "text": "📦 Mở giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã vào giỏ hàng\n\n"
+                        },
+                        {
+                          "text": "✅ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "PROMOTION_Apply_02\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════\n\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "💰 Giá gốc: 329.000đ\n"
+                        },
+                        {
+                          "text": "→ Chọn mã từ danh sách\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "💰 Giá sau giảm: 329.000đ\n"
+                        },
+                        {
+                          "text": "💸 Số tiền giảm: 0đ\n"
+                        },
+                        {
+                          "text": "❌ FAIL - Giá không giảm\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:31:41.675Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d65e924143411e789070-31361419e72bc6f09b2a",
+              "file": "PROMOTION_Apply.spec.js",
+              "line": 306,
+              "column": 3
+            },
+            {
+              "title": "PROMOTION_Apply_03: Kiểm tra tổng thanh toán sau khi áp mã giảm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 44477,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Chuẩn bị test...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã đăng nhập sẵn\n\n"
+                        },
+                        {
+                          "text": "🧹 Xóa giỏ hàng cũ...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Giỏ hàng đã trống\n\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "→ Đã click \"Thêm vào giỏ\"\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã thêm sản phẩm\n\n"
+                        },
+                        {
+                          "text": "📦 Mở giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã vào giỏ hàng\n\n"
+                        },
+                        {
+                          "text": "✅ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "PROMOTION_Apply_03\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════\n\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "💰 Tổng ban đầu: 329.000đ\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "💰 Tổng sau: 329.000đ\n"
+                        },
+                        {
+                          "text": "❌ FAIL - Tổng không thay đổi\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:32:17.099Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d65e924143411e789070-0ecf9883c805ae8bbcd9",
+              "file": "PROMOTION_Apply.spec.js",
+              "line": 344,
+              "column": 3
+            },
+            {
+              "title": "PROMOTION_Apply_04: Nhập mã voucher không tồn tại",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 33967,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Chuẩn bị test...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã đăng nhập sẵn\n\n"
+                        },
+                        {
+                          "text": "🧹 Xóa giỏ hàng cũ...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Giỏ hàng đã trống\n\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "→ Đã click \"Thêm vào giỏ\"\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã thêm sản phẩm\n\n"
+                        },
+                        {
+                          "text": "📦 Mở giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã vào giỏ hàng\n\n"
+                        },
+                        {
+                          "text": "✅ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "PROMOTION_Apply_04\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════\n\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "🎟️  Nhập mã sai: INVALID123XYZ\n"
+                        },
+                        {
+                          "text": "📢 Thông báo: \"Coupon không hợp lệ hoặc đã hết hạn\"\n"
+                        },
+                        {
+                          "text": "✅ PASS - Hiển thị lỗi đúng\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:33:01.588Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d65e924143411e789070-f28d73ff73a03c63e970",
+              "file": "PROMOTION_Apply.spec.js",
+              "line": 374,
+              "column": 3
+            },
+            {
+              "title": "PROMOTION_Apply_05: Nhập mã nhưng không đủ điều kiện tối thiểu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 31099,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Chuẩn bị test...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã đăng nhập sẵn\n\n"
+                        },
+                        {
+                          "text": "🧹 Xóa giỏ hàng cũ...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Giỏ hàng đã trống\n\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "→ Đã click \"Thêm vào giỏ\"\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã thêm sản phẩm\n\n"
+                        },
+                        {
+                          "text": "📦 Mở giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã vào giỏ hàng\n\n"
+                        },
+                        {
+                          "text": "✅ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "PROMOTION_Apply_05\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════\n\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "💰 Đơn hàng: 329.000đ\n"
+                        },
+                        {
+                          "text": "🎟️  Nhập mã yêu cầu tối thiểu: MIN500K\n"
+                        },
+                        {
+                          "text": "📢 Thông báo: \"Coupon không hợp lệ hoặc đã hết hạn\"\n"
+                        },
+                        {
+                          "text": "✅ PASS - Hiển thị điều kiện\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:33:35.567Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d65e924143411e789070-830280af52a319ccb9a6",
+              "file": "PROMOTION_Apply.spec.js",
+              "line": 402,
+              "column": 3
+            },
+            {
+              "title": "PROMOTION_Apply_06: Áp mã khi người dùng chưa đăng nhập",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 33364,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Chuẩn bị test...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã đăng nhập sẵn\n\n"
+                        },
+                        {
+                          "text": "🧹 Xóa giỏ hàng cũ...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Giỏ hàng đã trống\n\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "→ Đã click \"Thêm vào giỏ\"\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã thêm sản phẩm\n\n"
+                        },
+                        {
+                          "text": "📦 Mở giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "✓ Đã vào giỏ hàng\n\n"
+                        },
+                        {
+                          "text": "✅ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "PROMOTION_Apply_06\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════\n\n"
+                        },
+                        {
+                          "text": "🚪 Đã đăng xuất\n"
+                        },
+                        {
+                          "text": "✓ Đã tắt popup\n"
+                        },
+                        {
+                          "text": "⏭️  SKIP - Không có giỏ hàng\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:34:06.679Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d65e924143411e789070-0d9a5d308def22bdbeca",
+              "file": "PROMOTION_Apply.spec.js",
+              "line": 433,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "USER_MGT_Register.spec.js",
+      "file": "USER_MGT_Register.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "USER_MGT - Module Đăng ký tài khoản",
+          "file": "USER_MGT_Register.spec.js",
+          "line": 72,
+          "column": 6,
+          "specs": [
+            {
+              "title": "USER_MGT_Register_01: Kiểm tra layout màn hình đăng ký",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11470,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Đang mở trang đăng ký...\n"
+                        },
+                        {
+                          "text": "✓ Đã load trang\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "✓ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "=== USER_MGT_Register_01 ===\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "✓ Trường \"Họ\" hiển thị đúng\n"
+                        },
+                        {
+                          "text": "✓ Trường \"Tên\" hiển thị đúng\n"
+                        },
+                        {
+                          "text": "✓ Trường \"Email\" hiển thị đúng\n"
+                        },
+                        {
+                          "text": "✓ Trường \"Mật khẩu\" hiển thị đúng\n"
+                        },
+                        {
+                          "text": "✓ Nút \"Tạo tài khoản\" hiển thị đúng\n"
+                        },
+                        {
+                          "text": "=== KẾT QUẢ: PASS - Layout hiển thị đầy đủ 4 trường và 1 button ===\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:34:40.073Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9f66d2f1bdc25f2d5666-31b76dd6d6f85314d56d",
+              "file": "USER_MGT_Register.spec.js",
+              "line": 94,
+              "column": 3
+            },
+            {
+              "title": "USER_MGT_Register_02: Kiểm tra nhập dữ liệu hợp lệ và tạo tài khoản thành công",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16596,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Đang mở trang đăng ký...\n"
+                        },
+                        {
+                          "text": "✓ Đã load trang\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "✓ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "=== USER_MGT_Register_02 ===\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "Đã nhập Họ: han\n"
+                        },
+                        {
+                          "text": "Đã nhập Tên: trang\n"
+                        },
+                        {
+                          "text": "Đã nhập Email: hantrang1764344102618@yobmail.com\n"
+                        },
+                        {
+                          "text": "Đã nhập Password: Matkhau@123\n"
+                        },
+                        {
+                          "text": "Đã click nút \"Tạo tài khoản\"\n"
+                        },
+                        {
+                          "text": "URL hiện tại: https://rabity.vn/account/register\n"
+                        },
+                        {
+                          "text": "=== KẾT QUẢ: PASS - Tài khoản được tạo thành công ===\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:34:51.557Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9f66d2f1bdc25f2d5666-251b91238b17ad0accb9",
+              "file": "USER_MGT_Register.spec.js",
+              "line": 138,
+              "column": 3
+            },
+            {
+              "title": "USER_MGT_Register_03: Kiểm tra hiển thị thông báo đăng ký thành công",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16807,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Đang mở trang đăng ký...\n"
+                        },
+                        {
+                          "text": "✓ Đã load trang\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "✓ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "=== USER_MGT_Register_03 ===\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "Đã submit form đăng ký\n"
+                        },
+                        {
+                          "text": "⚠ Không tìm thấy thông báo hiển thị (có thể redirect thẳng)\n"
+                        },
+                        {
+                          "text": "=== KẾT QUẢ: FAIL/UNKNOWN - Cần kiểm tra thủ công ===\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:35:08.168Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9f66d2f1bdc25f2d5666-3d5b6f31f58b3a121ef4",
+              "file": "USER_MGT_Register.spec.js",
+              "line": 183,
+              "column": 3
+            },
+            {
+              "title": "USER_MGT_Register_04: Nhập Email đã tồn tại",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14634,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Đang mở trang đăng ký...\n"
+                        },
+                        {
+                          "text": "✓ Đã load trang\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "✓ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "=== USER_MGT_Register_04 ===\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "Đã nhập Email đã tồn tại: existing@yobmail.com\n"
+                        },
+                        {
+                          "text": "Đã click nút đăng ký\n"
+                        },
+                        {
+                          "text": "=== KẾT QUẢ: FAIL - Không hiển thị thông báo Email đã tồn tại ===\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:35:24.988Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9f66d2f1bdc25f2d5666-d8222e1b96af8602c90c",
+              "file": "USER_MGT_Register.spec.js",
+              "line": 236,
+              "column": 3
+            },
+            {
+              "title": "USER_MGT_Register_05: Nhập định dạng Email sai",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14170,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Đang mở trang đăng ký...\n"
+                        },
+                        {
+                          "text": "✓ Đã load trang\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "✓ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "=== USER_MGT_Register_05 ===\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "Đã nhập Email sai định dạng: invalid-email-format\n"
+                        },
+                        {
+                          "text": "Đã click nút đăng ký\n"
+                        },
+                        {
+                          "text": "✓ Validation message: Please include an '@' in the email address. 'invalid-email-format' is missing an '@'.\n"
+                        },
+                        {
+                          "text": "=== KẾT QUẢ: PASS - Hiển thị cảnh báo Email không hợp lệ ===\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:35:39.635Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9f66d2f1bdc25f2d5666-6937984709aa113074b3",
+              "file": "USER_MGT_Register.spec.js",
+              "line": 289,
+              "column": 3
+            },
+            {
+              "title": "USER_MGT_Register_06: Mật khẩu quá ngắn / không đủ ký tự",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17516,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Đang mở trang đăng ký...\n"
+                        },
+                        {
+                          "text": "✓ Đã load trang\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "✓ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "=== USER_MGT_Register_06 ===\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "Đã nhập mật khẩu ngắn: 123 (3 ký tự)\n"
+                        },
+                        {
+                          "text": "Đã click nút đăng ký\n"
+                        },
+                        {
+                          "text": "✓ Tìm thấy thông báo lỗi: \"\n\t\t\t\t\t\t\t\t\t\tMật khẩu phải có ít nhất 8 ký tự, bao gồm chữ và số, không bao gồm ký tự đặc biệt\n\t\t\t\t\t\t\t\t\t\"\n"
+                        },
+                        {
+                          "text": "=== KẾT QUẢ: PASS - Hiển thị cảnh báo \"Mật khẩu quá ngắn\" ===\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:35:53.817Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9f66d2f1bdc25f2d5666-7d143e6b11b30b706822",
+              "file": "USER_MGT_Register.spec.js",
+              "line": 342,
+              "column": 3
+            },
+            {
+              "title": "USER_MGT_Register_07: Để trống trường bắt buộc",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 25328,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Đang mở trang đăng ký...\n"
+                        },
+                        {
+                          "text": "✓ Đã load trang\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "✓ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "=== USER_MGT_Register_07 ===\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "Đã bỏ trống trường Email (trường bắt buộc)\n"
+                        },
+                        {
+                          "text": "Đã click nút đăng ký\n"
+                        },
+                        {
+                          "text": "✓ Tìm thấy thông báo lỗi: \"Email không được để trống\"\n"
+                        },
+                        {
+                          "text": "✓ Validation message: Please fill out this field.\n"
+                        },
+                        {
+                          "text": "=== KẾT QUẢ: PASS - Hiển thị cảnh báo \"Không được để trống\" ===\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:36:11.347Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9f66d2f1bdc25f2d5666-2abb67ce056a0cb8d99b",
+              "file": "USER_MGT_Register.spec.js",
+              "line": 397,
+              "column": 3
+            },
+            {
+              "title": "USER_MGT_Register_08: Nhập ký tự đặc biệt sai quy định",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14868,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n🔄 Đang mở trang đăng ký...\n"
+                        },
+                        {
+                          "text": "✓ Đã load trang\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "✓ Sẵn sàng test\n\n"
+                        },
+                        {
+                          "text": "=== USER_MGT_Register_08 ===\n"
+                        },
+                        {
+                          "text": "✓ Đã đóng popup quảng cáo bằng selector: [aria-label*=\"Close\"]\n"
+                        },
+                        {
+                          "text": "Đã nhập ký tự đặc biệt vào Họ và Tên: !@#$%^&*(){}[]\n"
+                        },
+                        {
+                          "text": "Đã click nút đăng ký\n"
+                        },
+                        {
+                          "text": "✓ Tìm thấy thông báo lỗi: \"\n\t\t\t\t\t\t\t\t\t\tMật khẩu phải có ít nhất 8 ký tự, bao gồm chữ và số, không bao gồm ký tự đặc biệt\n\t\t\t\t\t\t\t\t\t\"\n"
+                        },
+                        {
+                          "text": "=== KẾT QUẢ: PASS - Hiển thị \"Ký tự không hợp lệ\" ===\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T15:36:36.685Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9f66d2f1bdc25f2d5666-716dae647c86a949ad40",
+              "file": "USER_MGT_Register.spec.js",
+              "line": 456,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-11-28T15:30:47.303Z",
+    "duration": 364440.546,
+    "expected": 14,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
