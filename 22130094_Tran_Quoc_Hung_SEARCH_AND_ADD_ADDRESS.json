@@ -1,0 +1,556 @@
+{
+  "config": {
+    "configFile": "/Users/hung/MyDocuments/NLU/Testing/sofware_tester/playwright.config.js",
+    "rootDir": "/Users/hung/MyDocuments/NLU/Testing/sofware_tester/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 12
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/hung/MyDocuments/NLU/Testing/sofware_tester/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 12
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/hung/MyDocuments/NLU/Testing/sofware_tester/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.1",
+    "workers": 12,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "search_and_filter/search1.spec.js",
+      "file": "search_and_filter/search1.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Module Product Search - Rabity.vn",
+          "file": "search_and_filter/search1.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC01: Search by valid keyword",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 25503,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ TC01 Passed: Keyword search successful\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T10:22:20.288Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "214ec78bc39185d0ec12-7fd1cd507211081ab343",
+              "file": "search_and_filter/search1.spec.js",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "TC02: Search by non-existent keyword",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 19022,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ TC02 Passed: No results found as expected\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T10:22:20.299Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "214ec78bc39185d0ec12-7a08c9181329dc16ae37",
+              "file": "search_and_filter/search1.spec.js",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "TC03: Search with empty input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 24071,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ TC03 Passed: No search executed for empty input\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T10:22:20.301Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "214ec78bc39185d0ec12-a03a40b717795904bc65",
+              "file": "search_and_filter/search1.spec.js",
+              "line": 103,
+              "column": 7
+            },
+            {
+              "title": "TC04: Search with special characters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 23236,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ TC04 Passed: Search with special characters returned 61 results\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T10:22:20.250Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "214ec78bc39185d0ec12-3fae457f171ad0cb3da6",
+              "file": "search_and_filter/search1.spec.js",
+              "line": 135,
+              "column": 7
+            },
+            {
+              "title": "TC05: Search and navigate back",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 23828,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ℹ️ Product detail page loaded\n"
+                        },
+                        {
+                          "text": "✅ TC05 Passed: Back to search results successful, 52 products visible\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T10:22:20.293Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "214ec78bc39185d0ec12-b987651d9e49c6d32932",
+              "file": "search_and_filter/search1.spec.js",
+              "line": 168,
+              "column": 7
+            },
+            {
+              "title": "TC06: Search by SKU",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 17795,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ TC06 Passed: SKU search successful\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T10:22:20.183Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "214ec78bc39185d0ec12-b9e6870432906e1b7e19",
+              "file": "search_and_filter/search1.spec.js",
+              "line": 214,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Module Checkout - Rabity.vn",
+          "file": "search_and_filter/search1.spec.js",
+          "line": 259,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC01: Điền đầy đủ Tên, SĐT, Email, Địa chỉ, Tỉnh/TP",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 31474,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ TC01 Passed: Billing information entered successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T10:22:20.238Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "214ec78bc39185d0ec12-c655a94e6bd91d5a9e3e",
+              "file": "search_and_filter/search1.spec.js",
+              "line": 272,
+              "column": 7
+            },
+            {
+              "title": "TC02: Bỏ trống trường Tên khi đặt hàng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 27980,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ TC02 Passed: Error message for empty name displayed correctly\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T10:22:20.256Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "214ec78bc39185d0ec12-b1355809f7f3cbe8b532",
+              "file": "search_and_filter/search1.spec.js",
+              "line": 354,
+              "column": 7
+            },
+            {
+              "title": "TC03: SĐT không hợp lệ hiển thị lỗi",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 27895,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ TC03 Passed: Error message for invalid phone displayed correctly\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T10:22:20.324Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "214ec78bc39185d0ec12-a9fe1ac517b3a89c0156",
+              "file": "search_and_filter/search1.spec.js",
+              "line": 425,
+              "column": 7
+            },
+            {
+              "title": "TC04: Họ và tên quá dài sẽ bị cắt bớt",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 27418,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Length of name input after filling: \u001b[33m0\u001b[39m\n"
+                        },
+                        {
+                          "text": "✅ TC04 Passed: Họ và tên quá dài đã bị cắt bớt\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T10:22:20.292Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "214ec78bc39185d0ec12-dc58adbfe1caa7b4c0b3",
+              "file": "search_and_filter/search1.spec.js",
+              "line": 503,
+              "column": 7
+            },
+            {
+              "title": "TC05: Chọn option thứ 2 từ autocomplete địa chỉ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 10,
+                      "status": "passed",
+                      "duration": 24708,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Selected address: Phường Linh Xuân, Thành phố Thủ Đức, Hồ Chí Minh\n"
+                        },
+                        {
+                          "text": "✅ TC05 Passed: Chọn option thứ 2 từ autocomplete địa chỉ thành công\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T10:22:20.260Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "214ec78bc39185d0ec12-7e6992401a806329edd0",
+              "file": "search_and_filter/search1.spec.js",
+              "line": 581,
+              "column": 7
+            },
+            {
+              "title": "TC06: Nhập email không có ký tự @",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 11,
+                      "status": "passed",
+                      "duration": 24291,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Email error message: Email không hợp lệ\n"
+                        },
+                        {
+                          "text": "✅ TC06 Passed: Email không hợp lệ được phát hiện\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T10:22:20.323Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "214ec78bc39185d0ec12-87ec093328443097f69e",
+              "file": "search_and_filter/search1.spec.js",
+              "line": 634,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-11-28T10:22:18.831Z",
+    "duration": 34018.241,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
