@@ -1,0 +1,1261 @@
+{
+  "config": {
+    "configFile": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\playwright.config.js",
+    "rootDir": "D:/Classes/Nam4/Kiemthu_phanmem_testing/sofware_tester/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Classes/Nam4/Kiemthu_phanmem_testing/sofware_tester/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "D:/Classes/Nam4/Kiemthu_phanmem_testing/sofware_tester/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 320000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "rabity\\address_books_reviews\\address_review.spec.js",
+      "file": "rabity/address_books_reviews/address_review.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Module Quản lý Sổ địa chỉ",
+          "file": "rabity/address_books_reviews/address_review.spec.js",
+          "line": 41,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC_DFD_ADR_1: Defect–Không cho phép tạo địa chỉ khi bỏ trống tất cả field",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 14570,
+                      "error": {
+                        "message": "Error: ❌ DEFECT PHÁT HIỆN: Hệ thống cho phép tạo địa chỉ rỗng! (Ban đầu: 0 -> Sau đó: 1)",
+                        "stack": "Error: ❌ DEFECT PHÁT HIỆN: Hệ thống cho phép tạo địa chỉ rỗng! (Ban đầu: 0 -> Sau đó: 1)\n    at D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js:122:13",
+                        "location": {
+                          "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                          "column": 13,
+                          "line": 122
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 120 |\u001b[39m\n \u001b[90m 121 |\u001b[39m     \u001b[36mif\u001b[39m (currentAddressCount \u001b[33m>\u001b[39m initialAddressCount) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 122 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 123 |\u001b[39m         \u001b[32m`❌ DEFECT PHÁT HIỆN: Hệ thống cho phép tạo địa chỉ rỗng! (Ban đầu: ${initialAddressCount} -> Sau đó: ${currentAddressCount})`\u001b[39m\n \u001b[90m 124 |\u001b[39m       )\u001b[33m;\u001b[39m\n \u001b[90m 125 |\u001b[39m     } \u001b[36melse\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                            "column": 13,
+                            "line": 122
+                          },
+                          "message": "Error: ❌ DEFECT PHÁT HIỆN: Hệ thống cho phép tạo địa chỉ rỗng! (Ban đầu: 0 -> Sau đó: 1)\n\n  120 |\n  121 |     if (currentAddressCount > initialAddressCount) {\n> 122 |       throw new Error(\n      |             ^\n  123 |         `❌ DEFECT PHÁT HIỆN: Hệ thống cho phép tạo địa chỉ rỗng! (Ban đầu: ${initialAddressCount} -> Sau đó: ${currentAddressCount})`\n  124 |       );\n  125 |     } else {\n    at D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js:122:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Bắt đầu truy cập trang chủ...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Phát hiện Banner quảng cáo, đang tự động đóng...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đang thực hiện đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công. Chuyển hướng đến trang Sổ địa chỉ...\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu TC_DFD_ADR_1\n"
+                        },
+                        {
+                          "text": ">> [Debug] Số lượng địa chỉ ban đầu: 0\n"
+                        },
+                        {
+                          "text": ">> [Step] Click Submit form trống...\n"
+                        },
+                        {
+                          "text": ">> [Debug] Số lượng địa chỉ sau khi Reload: 1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:49:38.925Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-0446f-ỉ-khi-bỏ-trống-tất-cả-field-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-0446f-ỉ-khi-bỏ-trống-tất-cả-field-chrome\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-0446f-ỉ-khi-bỏ-trống-tất-cả-field-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                        "column": 13,
+                        "line": 122
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-5a46251754d2a3e55abd",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 75,
+              "column": 3
+            },
+            {
+              "title": "TC_DFD_ADR_2 :Sửa địa chỉ thành công",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14776,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Bắt đầu truy cập trang chủ...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Phát hiện Banner quảng cáo, đang tự động đóng...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đang thực hiện đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công. Chuyển hướng đến trang Sổ địa chỉ...\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu kiểm tra TC_DFD_ADR_2 (Edit Address)\n"
+                        },
+                        {
+                          "text": ">> [Step] Click vào icon Sửa địa chỉ đầu tiên...\n"
+                        },
+                        {
+                          "text": ">> [Step] Điền thông tin mới vào form...\n"
+                        },
+                        {
+                          "text": ">> [Step] Chọn Tỉnh/Thành...\n"
+                        },
+                        {
+                          "text": ">> [Step] Đợi load dữ liệu Quận/Huyện...\n"
+                        },
+                        {
+                          "text": ">> [Step] Đợi load dữ liệu Phường/Xã...\n"
+                        },
+                        {
+                          "text": ">> [Step] Click nút Cập nhật (btn-success)...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra dữ liệu sau khi cập nhật...\n"
+                        },
+                        {
+                          "text": "✅ PASS: Test Case Sửa địa chỉ hoàn tất.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:49:54.859Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-694d5-DR-2-Sửa-địa-chỉ-thành-công-chrome\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-24b5311a594f748deb7a",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 132,
+              "column": 3
+            },
+            {
+              "title": "TC_DFD_ADR_3: Thêm địa chỉ mới đầy đủ thông tin, hợp lệ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17771,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Bắt đầu truy cập trang chủ...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Phát hiện Banner quảng cáo, đang tự động đóng...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đang thực hiện đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công. Chuyển hướng đến trang Sổ địa chỉ...\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu kiểm tra TC_DFD_ADR_3 (Add New Success)\n"
+                        },
+                        {
+                          "text": ">> [Step] Điền thông tin Họ tên, SĐT, Địa chỉ...\n"
+                        },
+                        {
+                          "text": ">> [Step] Chọn địa chỉ hành chính...\n"
+                        },
+                        {
+                          "text": ">> [Step] Đợi load dữ liệu Quận/Huyện...\n"
+                        },
+                        {
+                          "text": ">> [Step] Đợi load dữ liệu Phường/Xã...\n"
+                        },
+                        {
+                          "text": ">> [Step] Click nút Thêm mới...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra địa chỉ mới đã được thêm...\n"
+                        },
+                        {
+                          "text": "✅ PASS: Thêm mới địa chỉ thành công.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:50:09.851Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-c1e2b-mới-đầy-đủ-thông-tin-hợp-lệ-chrome\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-06ccb37f8a8edad268a5",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 201,
+              "column": 3
+            },
+            {
+              "title": "TC_DFD_ADR_4: Đặt địa chỉ là địa chỉ mặc định",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11750,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Bắt đầu truy cập trang chủ...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đang thực hiện đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công. Chuyển hướng đến trang Sổ địa chỉ...\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu kiểm tra TC_DFD_ADR_4\n"
+                        },
+                        {
+                          "text": ">> [Info] Có nhiều địa chỉ, chọn địa chỉ thứ 2 để set default.\n"
+                        },
+                        {
+                          "text": ">> [Step] Tick chọn 'Đặt làm địa chỉ mặc định'...\n"
+                        },
+                        {
+                          "text": ">> [Step] Click nút Cập nhật...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra nhãn 'Địa chỉ mặc định' xuất hiện...\n"
+                        },
+                        {
+                          "text": "✅ PASS: Đã thấy nhãn 'Địa chỉ mặc định' xuất hiện trên UI.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:50:27.642Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-88841-địa-chỉ-là-địa-chỉ-mặc-định-chrome\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-0e75ec84244975dcc237",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 271,
+              "column": 3
+            },
+            {
+              "title": "TC_DFD_ADR_5: Xóa địa chỉ thành công",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16042,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Bắt đầu truy cập trang chủ...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Phát hiện Banner quảng cáo, đang tự động đóng...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đang thực hiện đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công. Chuyển hướng đến trang Sổ địa chỉ...\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu kiểm tra TC_DFD_ADR_5 (Delete Existing Address)\n"
+                        },
+                        {
+                          "text": ">> [Info] Hiện tại đang có 2 địa chỉ có thể xóa.\n"
+                        },
+                        {
+                          "text": ">> [Step] Click vào nút Xóa của địa chỉ cuối cùng...\n"
+                        },
+                        {
+                          "text": ">> [Dialog] Phát hiện popup: Bạn có chắc chắn muốn xóa địa chỉ này?\n"
+                        },
+                        {
+                          "text": ">> [Dialog] Đã bấm OK.\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra xem địa chỉ đã bị xóa chưa...\n"
+                        },
+                        {
+                          "text": ">> [Info] Số lượng địa chỉ sau khi xóa: 1\n"
+                        },
+                        {
+                          "text": "✅ PASS: Đã xóa thành công 1 địa chỉ.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:50:39.404Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-de5d0-DR-5-Xóa-địa-chỉ-thành-công-chrome\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-e6661c949485c8b15154",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 333,
+              "column": 3
+            },
+            {
+              "title": "TC_DFD_ADR_6: Defect–Cho phép ký tự đặc biệt trong Họ & Tên",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 15410,
+                      "error": {
+                        "message": "Error: ❌ DEFECT PHÁT HIỆN: Hệ thống đã lưu thành công tên chứa ký tự đặc biệt (!@#$, %^&*)!",
+                        "stack": "Error: ❌ DEFECT PHÁT HIỆN: Hệ thống đã lưu thành công tên chứa ký tự đặc biệt (!@#$, %^&*)!\n    at D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js:470:13",
+                        "location": {
+                          "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                          "column": 13,
+                          "line": 470
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 468 |\u001b[39m     \u001b[36mif\u001b[39m (bodyContent\u001b[33m.\u001b[39mincludes(\u001b[32m\"!@#$\"\u001b[39m) \u001b[33m||\u001b[39m bodyContent\u001b[33m.\u001b[39mincludes(\u001b[32m\"%^&*\"\u001b[39m)) {\n \u001b[90m 469 |\u001b[39m       \u001b[90m// ==> ĐÂY LÀ CHỖ IN RA LỖI BẠN MUỐN\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 470 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 471 |\u001b[39m         \u001b[32m\"❌ DEFECT PHÁT HIỆN: Hệ thống đã lưu thành công tên chứa ký tự đặc biệt (!@#$, %^&*)!\"\u001b[39m\n \u001b[90m 472 |\u001b[39m       )\u001b[33m;\u001b[39m\n \u001b[90m 473 |\u001b[39m     } \u001b[36melse\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                            "column": 13,
+                            "line": 470
+                          },
+                          "message": "Error: ❌ DEFECT PHÁT HIỆN: Hệ thống đã lưu thành công tên chứa ký tự đặc biệt (!@#$, %^&*)!\n\n  468 |     if (bodyContent.includes(\"!@#$\") || bodyContent.includes(\"%^&*\")) {\n  469 |       // ==> ĐÂY LÀ CHỖ IN RA LỖI BẠN MUỐN\n> 470 |       throw new Error(\n      |             ^\n  471 |         \"❌ DEFECT PHÁT HIỆN: Hệ thống đã lưu thành công tên chứa ký tự đặc biệt (!@#$, %^&*)!\"\n  472 |       );\n  473 |     } else {\n    at D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js:470:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Bắt đầu truy cập trang chủ...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Phát hiện Banner quảng cáo, đang tự động đóng...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đang thực hiện đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công. Chuyển hướng đến trang Sổ địa chỉ...\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu kiểm tra TC_DFD_ADR_6 (Special Characters)\n"
+                        },
+                        {
+                          "text": ">> [Step] Nhập ký tự đặc biệt vào Họ & Tên...\n"
+                        },
+                        {
+                          "text": ">> [Step] Chọn địa chỉ hành chính...\n"
+                        },
+                        {
+                          "text": ">> [Step] Click nút Thêm mới...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra xem hệ thống có báo lỗi ngay lập tức không...\n"
+                        },
+                        {
+                          "text": ">> [Info] Không thấy thông báo lỗi đỏ hiện ra... Tiếp tục kiểm tra Database.\n"
+                        },
+                        {
+                          "text": ">> [Step] Reload trang để kiểm tra xem dữ liệu rác có bị lưu vào DB không...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:50:55.467Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-5aa89-ký-tự-đặc-biệt-trong-Họ-Tên-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-5aa89-ký-tự-đặc-biệt-trong-Họ-Tên-chrome\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-5aa89-ký-tự-đặc-biệt-trong-Họ-Tên-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                        "column": 13,
+                        "line": 470
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-b6184bc8f567cd0e9678",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 394,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Module Đánh giá sản phẩm",
+          "file": "rabity/address_books_reviews/address_review.spec.js",
+          "line": 484,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC_DFD_REVIEW_1: Mở popup viết đánh giá sau khi chọn sao (Check UI)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14249,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Truy cập trang chủ & Đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Đóng quảng cáo...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công.\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu TC_DFD_REVIEW_1\n"
+                        },
+                        {
+                          "text": ">> [Step] Truy cập trang sản phẩm...\n"
+                        },
+                        {
+                          "text": ">> [Step] Click chọn 5 sao...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra Popup hiển thị trong vòng 1s...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra tiêu đề Popup...\n"
+                        },
+                        {
+                          "text": "✅ PASS: Popup hiển thị đúng và nhanh chóng.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:31:30.988Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-47a6b--sau-khi-chọn-sao-Check-UI--chrome\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-5a6df65c94589b269c96",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 511,
+              "column": 3
+            },
+            {
+              "title": "TC_DFD_REVIEW_2: Không thể gửi đánh giá khi trường Comment bị để trống",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16844,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Truy cập trang chủ & Đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Đóng quảng cáo...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công.\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu TC_DFD_REVIEW_2\n"
+                        },
+                        {
+                          "text": ">> [Step] Mở popup đánh giá...\n"
+                        },
+                        {
+                          "text": ">> [Step] Để trống comment và nhấn Gửi...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra dòng chữ đỏ 'Vui lòng nhập thông tin'...\n"
+                        },
+                        {
+                          "text": "✅ PASS: Hệ thống hiển thị lỗi đúng như kỳ vọng (Validation hoạt động tốt).\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:31:45.494Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-97e00--trường-Comment-bị-để-trống-chrome\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-25267e7ca55693adb41b",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 548,
+              "column": 3
+            },
+            {
+              "title": "TC_DFD_REVIEW_3: Gửi đánh giá thành công (Comment hợp lệ, không cần ảnh)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 19493,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Truy cập trang chủ & Đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Đóng quảng cáo...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công.\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu TC_DFD_REVIEW_3\n"
+                        },
+                        {
+                          "text": ">> [Step] Mở popup đánh giá...\n"
+                        },
+                        {
+                          "text": ">> [Step] Reload trang để lấy Token mới...\n"
+                        },
+                        {
+                          "text": ">> [Step] Nhập nội dung đánh giá...\n"
+                        },
+                        {
+                          "text": ">> [Step] Chờ 3s trước khi bấm Gửi...\n"
+                        },
+                        {
+                          "text": ">> [Step] Nhấn nút Gửi đánh giá...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra phản hồi từ hệ thống...\n"
+                        },
+                        {
+                          "text": "✅ PASS: Đánh giá đã được gửi và hệ thống báo thành công!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:32:02.356Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-f5770-mment-hợp-lệ-không-cần-ảnh--chrome\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-4a1179116827df376344",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 589,
+              "column": 3
+            },
+            {
+              "title": "TC_DFD_REVIEW_4: Defect - Gửi đánh giá thành công với Comment chỉ 1 ký tự",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 18311,
+                      "error": {
+                        "message": "Error: ❌ DEFECT PHÁT HIỆN: Hệ thống cho phép gửi đánh giá chỉ với 1 ký tự (h)!",
+                        "stack": "Error: ❌ DEFECT PHÁT HIỆN: Hệ thống cho phép gửi đánh giá chỉ với 1 ký tự (h)!\n    at D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js:701:13",
+                        "location": {
+                          "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                          "column": 13,
+                          "line": 701
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 699 |\u001b[39m\n \u001b[90m 700 |\u001b[39m       \u001b[90m// ==> NẾU HIỆN THÔNG BÁO THÀNH CÔNG -> LÀ BUG (VÌ LẼ RA PHẢI CHẶN)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 701 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 702 |\u001b[39m         \u001b[32m\"❌ DEFECT PHÁT HIỆN: Hệ thống cho phép gửi đánh giá chỉ với 1 ký tự (h)!\"\u001b[39m\n \u001b[90m 703 |\u001b[39m       )\u001b[33m;\u001b[39m\n \u001b[90m 704 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                            "column": 13,
+                            "line": 701
+                          },
+                          "message": "Error: ❌ DEFECT PHÁT HIỆN: Hệ thống cho phép gửi đánh giá chỉ với 1 ký tự (h)!\n\n  699 |\n  700 |       // ==> NẾU HIỆN THÔNG BÁO THÀNH CÔNG -> LÀ BUG (VÌ LẼ RA PHẢI CHẶN)\n> 701 |       throw new Error(\n      |             ^\n  702 |         \"❌ DEFECT PHÁT HIỆN: Hệ thống cho phép gửi đánh giá chỉ với 1 ký tự (h)!\"\n  703 |       );\n  704 |     } catch (error) {\n    at D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js:701:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Truy cập trang chủ & Đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Đóng quảng cáo...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công.\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu TC_DFD_REVIEW_4 (Check Length Validation)\n"
+                        },
+                        {
+                          "text": ">> [Step] Truy cập trang sản phẩm...\n"
+                        },
+                        {
+                          "text": ">> [Step] Nhập nội dung chỉ 1 ký tự ('h')...\n"
+                        },
+                        {
+                          "text": ">> [Step] Nhấn nút Gửi đánh giá...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra xem hệ thống có CHẶN hay CHO PHÉP...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:32:21.866Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-1a9cd-ông-với-Comment-chỉ-1-ký-tự-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-1a9cd-ông-với-Comment-chỉ-1-ký-tự-chrome\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-1a9cd-ông-với-Comment-chỉ-1-ký-tự-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                        "column": 13,
+                        "line": 701
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-eac9b2a534474504d121",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 658,
+              "column": 3
+            },
+            {
+              "title": "TC_DFD_REVIEW_5: Defect - Gửi đánh giá thành công với Comment ký tự đặc biệt",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 19587,
+                      "error": {
+                        "message": "Error: ❌ DEFECT PHÁT HIỆN: Hệ thống cho phép gửi đánh giá chứa ký tự đặc biệt (!@#$#)!",
+                        "stack": "Error: ❌ DEFECT PHÁT HIỆN: Hệ thống cho phép gửi đánh giá chứa ký tự đặc biệt (!@#$#)!\n    at D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js:764:13",
+                        "location": {
+                          "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                          "column": 13,
+                          "line": 764
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 762 |\u001b[39m       \u001b[36mawait\u001b[39m expect(successMessage)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 763 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 764 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 765 |\u001b[39m         \u001b[32m\"❌ DEFECT PHÁT HIỆN: Hệ thống cho phép gửi đánh giá chứa ký tự đặc biệt (!@#$#)!\"\u001b[39m\n \u001b[90m 766 |\u001b[39m       )\u001b[33m;\u001b[39m\n \u001b[90m 767 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                            "column": 13,
+                            "line": 764
+                          },
+                          "message": "Error: ❌ DEFECT PHÁT HIỆN: Hệ thống cho phép gửi đánh giá chứa ký tự đặc biệt (!@#$#)!\n\n  762 |       await expect(successMessage).toBeVisible({ timeout: 5000 });\n  763 |\n> 764 |       throw new Error(\n      |             ^\n  765 |         \"❌ DEFECT PHÁT HIỆN: Hệ thống cho phép gửi đánh giá chứa ký tự đặc biệt (!@#$#)!\"\n  766 |       );\n  767 |     } catch (error) {\n    at D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js:764:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Truy cập trang chủ & Đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Đóng quảng cáo...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công.\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu TC_DFD_REVIEW_5 (Check Special Char Validation)\n"
+                        },
+                        {
+                          "text": ">> [Step] Nhập nội dung ký tự đặc biệt ('!@#$#')...\n"
+                        },
+                        {
+                          "text": ">> [Step] Nhấn nút Gửi đánh giá...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra xem hệ thống có CHẶN hay CHO PHÉP...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:32:41.313Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-46ebc--với-Comment-ký-tự-đặc-biệt-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-46ebc--với-Comment-ký-tự-đặc-biệt-chrome\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-46ebc--với-Comment-ký-tự-đặc-biệt-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                        "column": 13,
+                        "line": 764
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-eaed9c4a11c4db3ce6e0",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 728,
+              "column": 3
+            },
+            {
+              "title": "TC_DFD_REVIEW_6: Blocking Bug - Upload file không phải ảnh (Web bị treo)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 17921,
+                      "error": {
+                        "message": "Error: ❌ BLOCKING BUG: Web bị treo (Loading vô tận) khi upload file PDF! Không hiện thông báo lỗi.",
+                        "stack": "Error: ❌ BLOCKING BUG: Web bị treo (Loading vô tận) khi upload file PDF! Không hiện thông báo lỗi.\n    at D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js:863:13",
+                        "location": {
+                          "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                          "column": 13,
+                          "line": 863
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 861 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m\">> [Info] Nút gửi vẫn đang ở trạng thái loading/treo...\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 862 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 863 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 864 |\u001b[39m         \u001b[32m\"❌ BLOCKING BUG: Web bị treo (Loading vô tận) khi upload file PDF! Không hiện thông báo lỗi.\"\u001b[39m\n \u001b[90m 865 |\u001b[39m       )\u001b[33m;\u001b[39m\n \u001b[90m 866 |\u001b[39m     }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                            "column": 13,
+                            "line": 863
+                          },
+                          "message": "Error: ❌ BLOCKING BUG: Web bị treo (Loading vô tận) khi upload file PDF! Không hiện thông báo lỗi.\n\n  861 |       console.log(\">> [Info] Nút gửi vẫn đang ở trạng thái loading/treo...\");\n  862 |\n> 863 |       throw new Error(\n      |             ^\n  864 |         \"❌ BLOCKING BUG: Web bị treo (Loading vô tận) khi upload file PDF! Không hiện thông báo lỗi.\"\n  865 |       );\n  866 |     }\n    at D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js:863:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Truy cập trang chủ & Đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Đóng quảng cáo...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công.\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu TC_DFD_REVIEW_6 (Check File Type Validation)\n"
+                        },
+                        {
+                          "text": ">> [Step] Mở popup đánh giá...\n"
+                        },
+                        {
+                          "text": ">> [Step] Upload file 'test.pdf' (Không phải ảnh)...\n"
+                        },
+                        {
+                          "text": ">> [Step] Nhấn nút Gửi đánh giá...\n"
+                        },
+                        {
+                          "text": ">> [Info] Đợi 2s để quan sát trạng thái loading...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra phản hồi hệ thống (Mong đợi lỗi, thực tế là Treo)...\n"
+                        },
+                        {
+                          "text": "⚠️ Hết thời gian chờ (Timeout) mà không thấy thông báo lỗi.\n"
+                        },
+                        {
+                          "text": ">> [Info] Nút gửi vẫn đang ở trạng thái loading/treo...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:33:02.167Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-93c0d-không-phải-ảnh-Web-bị-treo--chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-93c0d-không-phải-ảnh-Web-bị-treo--chrome\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-93c0d-không-phải-ảnh-Web-bị-treo--chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\tests\\rabity\\address_books_reviews\\address_review.spec.js",
+                        "column": 13,
+                        "line": 863
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-da0a821c4b3a6a9f0fe5",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 789,
+              "column": 3
+            },
+            {
+              "title": "TC_DFD_REVIEW_7: Gửi đánh giá thành công (Đầy đủ Comment và Ảnh hợp lệ)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22990,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Truy cập trang chủ & Đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Đóng quảng cáo...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công.\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu TC_DFD_REVIEW_7 (Valid Real Image Upload)\n"
+                        },
+                        {
+                          "text": ">> [Step] Mở popup đánh giá...\n"
+                        },
+                        {
+                          "text": ">> [Step] Nhập nội dung đánh giá...\n"
+                        },
+                        {
+                          "text": ">> [Step] Đang tải ảnh thật của sản phẩm về để upload...\n"
+                        },
+                        {
+                          "text": ">> [Step] Upload ảnh 'ao_khoac_that.jpg'...\n"
+                        },
+                        {
+                          "text": ">> [Step] Chờ 3s trước khi bấm Gửi...\n"
+                        },
+                        {
+                          "text": ">> [Step] Nhấn nút Gửi đánh giá...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Kiểm tra phản hồi từ hệ thống...\n"
+                        },
+                        {
+                          "text": "✅ PASS: Đánh giá kèm hình ảnh THẬT đã được gửi thành công!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:33:21.365Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-a6e95-y-đủ-Comment-và-Ảnh-hợp-lệ--chrome\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-eb9c12e2b079f752fd09",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 869,
+              "column": 3
+            },
+            {
+              "title": "TC_DFD_REVIEW_8: Đóng modal đánh giá khi click nút X hoặc Cancel (UI/UX)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 320000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 20689,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": ">> [Setup] Truy cập trang chủ & Đăng nhập...\n"
+                        },
+                        {
+                          "text": ">> [Popup] Đóng quảng cáo...\n"
+                        },
+                        {
+                          "text": ">> [Setup] Đăng nhập thành công.\n"
+                        },
+                        {
+                          "text": ">> [Test] Bắt đầu TC_DFD_REVIEW_8 (Check Close Functionality)\n"
+                        },
+                        {
+                          "text": ">> [Step] Truy cập trang sản phẩm...\n"
+                        },
+                        {
+                          "text": ">> [Step 1] Mở Popup và thử đóng bằng nút 'Hủy'...\n"
+                        },
+                        {
+                          "text": ">> [Step] Click nút 'Hủy'...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Đã đóng thành công bằng nút 'Hủy'.\n"
+                        },
+                        {
+                          "text": ">> [Step 2] Mở lại Popup và thử đóng bằng nút 'X'...\n"
+                        },
+                        {
+                          "text": ">> [Step] Click nút 'X'...\n"
+                        },
+                        {
+                          "text": ">> [Verify] Đã đóng thành công bằng nút 'X'.\n"
+                        },
+                        {
+                          "text": "✅ PASS: Chức năng đóng Popup hoạt động tốt trên cả 2 nút!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-28T04:33:44.591Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Classes\\Nam4\\Kiemthu_phanmem_testing\\sofware_tester\\test-results\\rabity-address_books_revie-cadd3-ck-nút-X-hoặc-Cancel-UI-UX--chrome\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "431468e8f3741c213ccb-8e51d100418770c00a3d",
+              "file": "rabity/address_books_reviews/address_review.spec.js",
+              "line": 951,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-11-28T04:49:38.047Z",
+    "duration": 248746.27999999997,
+    "expected": 9,
+    "unexpected": 5,
+    "skipped": 0,
+    "flaky": 0
+  }
+}
