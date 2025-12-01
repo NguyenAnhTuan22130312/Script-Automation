@@ -1,0 +1,869 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\HP\\sofware_tester\\playwright.config.js",
+    "rootDir": "C:/Users/HP/sofware_tester/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "test-results/22130225_PhamAnhQuan_Lab7.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/HP/sofware_tester/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/HP/sofware_tester/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "22130225_PhamAnhQuan_Lab7.spec.js",
+      "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Product_MGT_Filter: Lọc sản phẩm theo tiêu chí",
+          "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+          "line": 22,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Product_MGT_Filter_01: Lọc theo Giới tính",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 41870,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Popup OptiMonk xuất hiện → Đang đóng...\n"
+                        },
+                        {
+                          "text": "Đã chọn: Bé gái\n"
+                        },
+                        {
+                          "text": "PASS: Lọc theo Giới tính\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T12:19:16.607Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-288e64d8a996c47a0dc3",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "Product_MGT_Filter_02: Lọc theo Độ tuổi",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 43982,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Popup OptiMonk xuất hiện → Đang đóng...\n"
+                        },
+                        {
+                          "text": "Đã chọn: Từ 4-5 tuổi\n"
+                        },
+                        {
+                          "text": "PASS: Lọc theo Độ tuổi\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T12:19:16.615Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-549301770da3446b8bd8",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 48,
+              "column": 5
+            },
+            {
+              "title": "Product_MGT_Filter_03: Lọc theo Cân nặng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 43867,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Popup OptiMonk xuất hiện → Đang đóng...\n"
+                        },
+                        {
+                          "text": "Đã chọn: Từ Từ 12–13kg\n"
+                        },
+                        {
+                          "text": "PASS: Lọc theo Cân nặng\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T12:19:16.673Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-3f2f89eb53f26dff50e2",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 69,
+              "column": 5
+            },
+            {
+              "title": "Product_MGT_Filter_04: Lọc theo Loại sản phẩm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 42227,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Popup OptiMonk xuất hiện → Đang đóng...\n"
+                        },
+                        {
+                          "text": "Đã chọn: Áo gile\n"
+                        },
+                        {
+                          "text": "PASS: Lọc theo Loại sản phẩm\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T12:19:16.601Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-47e2dad1c58a645f481f",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 90,
+              "column": 5
+            },
+            {
+              "title": "Product_MGT_Filter_05: Lọc theo Màu sắc",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 35301,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Popup OptiMonk xuất hiện → Đang đóng...\n"
+                        },
+                        {
+                          "text": "Đã chọn: Màu hồng\n"
+                        },
+                        {
+                          "text": "PASS: Lọc theo Màu sắc\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T12:19:16.513Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-999992d996e4dccbe3ba",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 112,
+              "column": 5
+            },
+            {
+              "title": "Product_MGT_Filter_06: Lọc theo Giá",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 47040,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Popup OptiMonk xuất hiện → Đang đóng...\n"
+                        },
+                        {
+                          "text": "Đã chọn khoảng giá 0đ–1000000đ\n"
+                        },
+                        {
+                          "text": "PASS: Lọc theo Giá\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T12:19:16.704Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-99d539d557b8f848eced",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 133,
+              "column": 5
+            },
+            {
+              "title": "Product_MGT_Filter_07: Lọc Độ tuổi + Màu sắc",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 21175,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Popup OptiMonk xuất hiện → Đang đóng...\n"
+                        },
+                        {
+                          "text": "Đã chọn Độ tuổi: Từ 4-5 tuổi\n"
+                        },
+                        {
+                          "text": "Đã chọn Màu sắc: Hồng\n"
+                        },
+                        {
+                          "text": "PASS: Lọc Kép (Độ tuổi + Màu sắc) thành công.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T12:19:52.074Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-2f98051c413738137a6a",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 152,
+              "column": 1
+            },
+            {
+              "title": "Product_MGT_Filter_08: Sắp xếp theo Giá - Tăng dần (Giảm dần)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 32635,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Không có popup OptiMonk\n"
+                        },
+                        {
+                          "text": "Đã chọn sắp xếp: Giá Tăng dần\n"
+                        },
+                        {
+                          "text": "Danh sách giá: []\n"
+                        },
+                        {
+                          "text": "PASS: Danh sách sản phẩm đã sắp xếp đúng (Giá tăng dần).\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "1. Mở menu sắp xếp",
+                          "duration": 1068
+                        },
+                        {
+                          "title": "2. Chọn Giá: Tăng dần",
+                          "duration": 148
+                        },
+                        {
+                          "title": "3. Kiểm tra danh sách sản phẩm sau khi sắp xếp",
+                          "duration": 15088
+                        }
+                      ],
+                      "startTime": "2025-12-01T12:19:58.789Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-e5c62829546aaeec3173",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 181,
+              "column": 1
+            },
+            {
+              "title": "Product_MGT_Filter_09: Sắp xếp theo Tên - A-Z (Z-A)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 32116,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Popup OptiMonk xuất hiện → Đang đóng...\n"
+                        },
+                        {
+                          "text": "Đã chọn sắp xếp: Tên Z-A\n"
+                        },
+                        {
+                          "text": "Danh sách Tên Z-A: []\n"
+                        },
+                        {
+                          "text": "PASS: Danh sách sản phẩm đã sắp xếp đúng (Tên Z-A).\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "1. Mở menu sắp xếp",
+                          "duration": 1003
+                        },
+                        {
+                          "title": "2. Chọn Tên: Z-A",
+                          "duration": 125
+                        },
+                        {
+                          "title": "3. Kiểm tra danh sách sản phẩm sau khi sắp xếp",
+                          "duration": 15069
+                        }
+                      ],
+                      "startTime": "2025-12-01T12:19:59.054Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-14491ce534200955d502",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 229,
+              "column": 1
+            },
+            {
+              "title": "Product_MGT_Filter_10: Sắp xếp theo Mới nhất (Cũ nhất)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 36929,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Popup OptiMonk xuất hiện → Đang đóng...\n"
+                        },
+                        {
+                          "text": "Đã chọn sắp xếp: Mới nhất\n"
+                        },
+                        {
+                          "text": "Danh sách Mới nhất: []\n"
+                        },
+                        {
+                          "text": "PASS: Danh sách sản phẩm đã sắp xếp đúng (Mới nhất).\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "1. Mở menu sắp xếp",
+                          "duration": 1215
+                        },
+                        {
+                          "title": "2. Chọn Mới nhất",
+                          "duration": 213
+                        },
+                        {
+                          "title": "3. Kiểm tra danh sách sản phẩm sau khi sắp xếp",
+                          "duration": 15041
+                        }
+                      ],
+                      "startTime": "2025-12-01T12:20:00.957Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-513f828106bce7711bfa",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 277,
+              "column": 1
+            },
+            {
+              "title": "Product_MGT_Filter_11: Sắp xếp theo Bán chạy nhất",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 32923,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Popup OptiMonk xuất hiện → Đang đóng...\n"
+                        },
+                        {
+                          "text": "Đã chọn sắp xếp: Bán chạy nhất\n"
+                        },
+                        {
+                          "text": "Danh sách Bán chạy nhất: []\n"
+                        },
+                        {
+                          "text": "PASS: Danh sách sản phẩm đã sắp xếp đúng (Bán chạy nhất).\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "1. Mở menu sắp xếp",
+                          "duration": 1033
+                        },
+                        {
+                          "title": "2. Chọn Bán chạy nhất",
+                          "duration": 130
+                        },
+                        {
+                          "title": "3. Kiểm tra danh sách sản phẩm sau khi sắp xếp",
+                          "duration": 15099
+                        }
+                      ],
+                      "startTime": "2025-12-01T12:20:01.014Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-119592af82a810c69bc0",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 325,
+              "column": 1
+            },
+            {
+              "title": "Product_MGT_Filter_12: Sắp xếp theo Tồn kho giảm dần",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 35317,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Popup OptiMonk xuất hiện → Đang đóng...\n"
+                        },
+                        {
+                          "text": "Đã chọn sắp xếp: Tồn kho giảm dần\n"
+                        },
+                        {
+                          "text": "Danh sách Tồn kho giảm dần: []\n"
+                        },
+                        {
+                          "text": "PASS: Danh sách sản phẩm đã sắp xếp đúng (Tồn kho giảm dần).\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "1. Mở menu sắp xếp",
+                          "duration": 910
+                        },
+                        {
+                          "title": "2. Chọn Tồn kho giảm dần",
+                          "duration": 179
+                        },
+                        {
+                          "title": "3. Kiểm tra danh sách sản phẩm sau khi sắp xếp",
+                          "duration": 15056
+                        }
+                      ],
+                      "startTime": "2025-12-01T12:20:04.226Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-1ac8a832a05ed98ff569",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 373,
+              "column": 1
+            }
+          ]
+        },
+        {
+          "title": "Account_MGT_ForgetPassword",
+          "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+          "line": 429,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Account_MGT_ForgetPassword_01: Quên mật khẩu thành công (Email hợp lệ)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 8698,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Đã mở trực tiếp và xác nhận form Quên Mật Khẩu.\n"
+                        },
+                        {
+                          "text": "Đã nhập email: quan362012@gmail.com\n"
+                        },
+                        {
+                          "text": "✅ PASS: Quên mật khẩu thành công.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "1. Mở trực tiếp form Quên mật khẩu và chờ UI ổn định",
+                          "duration": 1832
+                        },
+                        {
+                          "title": "2. Nhập Email hợp lệ và gửi yêu cầu",
+                          "duration": 672
+                        },
+                        {
+                          "title": "3. Kiểm tra thông báo thành công",
+                          "duration": 5861
+                        }
+                      ],
+                      "startTime": "2025-12-01T12:20:13.355Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-362b74c477f6e0e5f9a1",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 434,
+              "column": 5
+            },
+            {
+              "title": "Account_MGT_ForgetPassword_02: Quên mật khẩu thất bại (Email không tồn tại)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 8328,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ PASS: Đã hiển thị thông báo email không tồn tại.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "1. Mở form Quên mật khẩu",
+                          "duration": 1525
+                        },
+                        {
+                          "title": "2. Nhập Email không tồn tại và gửi yêu cầu",
+                          "duration": 1397
+                        },
+                        {
+                          "title": "3. Kiểm tra thông báo lỗi",
+                          "duration": 5163
+                        }
+                      ],
+                      "startTime": "2025-12-01T12:20:22.163Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-75e8e9bfce2ad5462e46",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 469,
+              "column": 5
+            },
+            {
+              "title": "Account_MGT_ForgetPassword_03: Quên mật khẩu thất bại (Email sai định dạng)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 5777,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "PASS: Đã hiển thị thông báo email sai định dạng.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "1. Mở form Quên mật khẩu",
+                          "duration": 1880
+                        },
+                        {
+                          "title": "2. Nhập Email sai định dạng và gửi yêu cầu",
+                          "duration": 3432
+                        },
+                        {
+                          "title": "3. Kiểm tra thông báo lỗi",
+                          "duration": 194
+                        }
+                      ],
+                      "startTime": "2025-12-01T12:20:30.566Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f2b0c6ccdc9d9bc2b470-e1c179d0023521e1d60d",
+              "file": "22130225_PhamAnhQuan_Lab7.spec.js",
+              "line": 499,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-12-01T12:19:15.082Z",
+    "duration": 84766.387,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
